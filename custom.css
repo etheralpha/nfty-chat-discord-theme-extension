@@ -675,14 +675,23 @@ a {
   width: 240px;
 }
 .members-list-panel__search input {
+  background-color: var(--background-tertiary);
+  padding: 6.42px 6px 6.42px 8px;
   margin-bottom: 12px;
+  border-radius: 4px;
+  color: var(--text-normal);
+}
+.members-list-panel__search input::placeholder {
+  color: var(--text-muted);
 }
 .members-list-panel__search svg {
-  left: 7px;
+  left: 200px;
   top: 7px;
 }
+
+
 .members-list-panel__search svg path {
-    stroke: var(--text-muted);
+  stroke: var(--text-muted);
 }
 .members-list-panel__user {
   background-color: var(--background-secondary);
@@ -736,13 +745,13 @@ a {
   border-radius: 4px;
   background-color: var(--background-tertiary);
   color: var(--text-normal);
-  padding: 6.42px 6px 6.42px 23px;
+  padding: 6.42px 6px 6.42px 8px;
 }
 .user_search__input::placeholder {
   color: var(--text-muted);
 }
 .user_search__group>svg {
-  left: 7px;
+  left: 175px;
   top: 7px;
 }
 .user_search__group>svg path {
