@@ -26,7 +26,7 @@ async function toggleTheme() {
     // If theme is not present, add it
 
     // Get theme css from gist
-    let url = "https://gist.githubusercontent.com/hanniabu/b4900faca40890ab29d73fdeaf518d98/raw/230b4188416abeadfa14d09403e2cd687d5fecbd/custom-nifty-chat.html";
+    let url = "https://gist.githubusercontent.com/hanniabu/b4900faca40890ab29d73fdeaf518d98/raw";
     const [response] = await Promise.all([
       fetch(url)
     ]);
@@ -40,12 +40,10 @@ async function toggleTheme() {
     s.appendChild(document.createTextNode(css));
     head.appendChild(s);
 
-    let widget = document.getElementsById("twitter-widget-0")
-    let widgetCSS = "<style>.timeline-Widget{background-color:green!important;";
-    var s2 = document.createElement('style');
-    s2.setAttribute('type', 'text/css');
-    s2.appendChild(document.createTextNode(widgetCSS));
-    widgetCSS.appendChild(s2);
+    // Close twitter feed
+    document.getElementsByClassName('topbar__twitter')[0].click();
+    // Open the members sidebar
+    document.getElementsByClassName('topbar__indicators--members')[0].click();
 
     console.log("Discord Theme Enabled");
   }
