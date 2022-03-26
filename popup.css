@@ -1,0 +1,48 @@
+html {
+  --nfty: rgb(51, 186, 162);
+  --discord: #5865F2;
+  --discord-hover: #4852c4;
+  --color-white: #fff;
+  --color-normal: #dcddde;
+
+  width: 160px;
+  height: 100px;
+  padding: 8px;
+  background-color: #2f3136;
+  text-align: center;
+}
+.title {
+  margin-top: 0px;
+  padding-top: 0;
+  line-height: 1.05;
+  text-align: center;
+}
+.nfty {
+  color: var(--nfty);
+}
+.discord {
+  color: var(--color-normal);
+}
+button {
+  background-color: var(--discord);
+  color: var(--color-white);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.1 ease;
+
+  font-size: 13px;
+  line-height: 16px;
+  padding: 2px 16px;
+
+  height: 32px;
+  min-width: 60px;
+  min-height: 32px;
+}
+button:hover {
+  background-color: var(--discord-hover);
+}
