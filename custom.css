@@ -97,7 +97,8 @@ html {
   --brand-experiment-430: hsl(235,calc(var(--saturation-factor, 1)*85.7%),69.8%);
   --brand-experiment-460: hsl(235,calc(var(--saturation-factor, 1)*85.5%),67.5%);
   /*--brand-experiment: hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);*/
-  --brand-experiment: rgb(51, 186, 162);
+  /*----brand-experiment: rgb(51, 186, 162);*/
+  --brand-experiment: rgb(9 140 117);
   /*--brand-experiment: rgb(14 167 140);*/
   --brand-experiment-500: hsl(235,calc(var(--saturation-factor, 1)*85.6%),64.7%);
   --brand-experiment-530: hsl(235,calc(var(--saturation-factor, 1)*66.7%),58.8%);
@@ -220,6 +221,9 @@ a {
   width: 72px;
   background-color: var(--background-tertiary);
 }
+.communities__item {
+  transition: .15s ease;
+}
 .communities__item--loading,
 .communities__item>img,
 .communities__item>svg {
@@ -228,9 +232,6 @@ a {
   max-width: 45px;
   min-height: 45px;
   min-width: 45px;
-}
-.comunities-item {
-  transition: .15s ease;
 }
 .communities__item.active>img,
 .communities__item.active>svg {
@@ -783,6 +784,17 @@ a {
   max-height: none;
   min-height: auto;
 }
+.topbar__avatar,
+.transactions-panel__avatar {
+  -webkit-clip-path: none;
+  clip-path: none;
+}
+.topbar__avatar img,
+.topbar__avatar video,
+.transactions-panel__avatar img,
+.transactions-panel__avatar video {
+  border-radius: 100%;
+}
 .topbar__tab_transactions___active,
 .topbar__tab_transactions___active:hover {
   background-color: var(--background-secondary);
@@ -993,9 +1005,3 @@ a {
 .user-settings__sidebar-button--red {
   color: hsl(359, calc(var(--saturation-factor, 1) * 82.6%), 59.4%);
 }
-
-
-
-
-
-
